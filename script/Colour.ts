@@ -6,10 +6,10 @@ namespace CustomFirework {
     }
 
     export let colours: { [key: string]: Colour } = {
-        "yellow": {
-            fColour: "hsla(63, 100%, 50%, 1)",
-            hColour: "hsla(63, 100%, 50%, 0.5)",
-            name: "yellow"
+        "purple": {
+            fColour: "hsla(278, 100%, 50%, 1)",
+            hColour: "hsla(278, 100%, 50%, 0.5)",
+            name: "purple"
         },
         "red": {
             fColour: "hsla(0, 100%, 50%, 1)",
@@ -17,8 +17,8 @@ namespace CustomFirework {
             name: "red"
         },
         "blue": {
-            fColour: "hsla(238, 100%, 50%, 1)",
-            hColour: "hsla(238, 100%, 50%, 0.5)",
+            fColour: "hsla(205, 100%, 50%, 1)", 
+            hColour: "hsla(205, 100%, 50%, 0.5)",
             name: "blue"
         },
         "green": {

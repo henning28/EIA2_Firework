@@ -95,7 +95,7 @@ namespace CustomFirework {
             newInfoDiv.append(newNameSpan);
 
             let newPresetDiv: HTMLDivElement = document.createElement("div");
-            newPresetDiv.style.backgroundColor = serverFirework[index].colour.name;
+            newPresetDiv.style.backgroundColor = serverFirework[index].colour.fColour;
             newPresetDiv.classList.add("List_Preset_Element");
             newInfoDiv.append(newPresetDiv);
 
@@ -240,8 +240,8 @@ namespace CustomFirework {
         currentSize.innerHTML = String(currentFirework.size);
         let currentLifespan: HTMLSpanElement = document.querySelector("#creation_current_lifespan");
         currentLifespan.innerHTML = String(currentFirework.lifespan);
-        let currentColor: HTMLSpanElement = document.querySelector("#creation_current_color");
-        currentColor.style.backgroundColor = currentFirework.colour.name;
+        let currentColor: HTMLSpanElement = document.querySelector("#creation_current_colour");
+        currentColor.style.backgroundColor = currentFirework.colour.fColour;
         let currentPattern: HTMLSpanElement = document.querySelector("#creation_current_pattern");
         currentPattern.innerHTML = "<img \" class=\"List_Pattern\" src=\"textures/" + String(currentFirework.pattern) + ".png\">";
     }
@@ -393,9 +393,7 @@ namespace CustomFirework {
                 alert("Error! Try again!");
             }
         }
-
         requestList();
-
     }
 
     function handleCreateButton(): void {
@@ -462,7 +460,7 @@ namespace CustomFirework {
             newInfoDiv.append(newNameSpan);
 
             let newPresetDiv: HTMLDivElement = document.createElement("div");
-            newPresetDiv.style.backgroundColor = localFirework[index].colour.name;
+            newPresetDiv.style.backgroundColor = localFirework[index].colour.fColour;
             newPresetDiv.classList.add("List_Preset_Element");
             newInfoDiv.append(newPresetDiv);
 
