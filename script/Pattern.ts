@@ -9,7 +9,5 @@ namespace CustomFirework {
         "circle": Pattern.circle,
         "star": Pattern.star,
         "cross": Pattern.cross
-
     };
-
 }

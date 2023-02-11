@@ -1,5 +1,4 @@
 namespace CustomFirework {
-
     export interface FireworkComponents {
         name: string;
         colour: Colour;
@@ -9,6 +8,7 @@ namespace CustomFirework {
         id: string;
         serverSaved: boolean;
     }
+
     export interface ServerFireworkComponents {
         name: string;
         colour: string;
@@ -18,6 +18,4 @@ namespace CustomFirework {
         id: string;
         serverSaved: boolean;
     }
-
-    
 }

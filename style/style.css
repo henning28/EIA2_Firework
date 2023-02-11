@@ -6,7 +6,12 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
+    display: flex;
+}
+
+body {
+    margin: 0 auto;
 }
 
 header {
@@ -15,6 +20,10 @@ header {
     position: relative;
     width: 1105px;
     text-align: center;
+}
+
+h1 {
+    margin: 15px 0px 0px 0px;
 }
 
 h2 {
@@ -45,74 +54,57 @@ h2 {
 #uListServer {
     position: absolute;
     display: block;
-    top: 40px;
+    top: 50px;
     height: auto;
 }
 
 #List_Local_Subheader {
-    text-align: left;
-    position: absolute;
-    height: 40px;
-    
-}
-
-#List_Local_Subheader_Title {
-    /* position: absolute;
-    left: 10px;
-    width: 300px;
-    margin: 10px 0;
-    font-weight: 600; */
+    display: flex;
+    text-align: center;
 }
 
 .subtitle {
-    position: absolute;
     left: 10px;
-    width: 300px;
-    margin: 10px 0;
+    margin: 10px 10px;
     font-weight: 600;
+    font-size: 18px;
 }
 
 #resetButton {
-    position: absolute;
-    left: 620px;
-    margin: 2px;
+    position: relative;
+    margin-left: auto;
+    padding: 5px;
+    border: 2px black solid;
 }
 
 #uListLocal {
     position: absolute;
     display: block;
-    top: 40px;
+    top: 50px;
     height: auto;
 }
 
 .grid_main {
+    background-color: hsl(0, 0%, 100%);
     display: grid;
     position: relative;
     grid-template-columns: 300px 800px;
-    grid-template-rows: 550px 200px;
+    grid-template-rows: 550px 247px;
     column-gap: 20px;
     row-gap: 20px;
     margin: 20px;
-    margin-top: 0px;
     width: 1123px;
-
-    background-color: hsl(0, 0%, 100%);
-    
-    /* border: 2px solid black;
-    box-sizing: border-box;
-    border-radius: 13px; */
 }
 
 #Firework_Creation {
+    background-color: hsl(0, 0%, 90%);
+
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     padding: 20px;
     position: relative;
 
-    background-color: hsl(0, 0%, 90%);
-
     border: 4px solid black;
-    
     border-radius: 10px;
 }
 
@@ -155,7 +147,6 @@ canvas {
 }
 
 .trash {
-    /* position:; */
     top: 15px;
     height: 30px;
     width: 30px;
@@ -184,14 +175,27 @@ fieldset {
     border-style: none;
 }
 
+#fieldset_1 {
+    width: auto;
+    height: 60px;
+}
+
+#fieldset_2 {
+    width: auto;
+    height: 100px;
+}
+
 .creation_info_element {
     display: inline-block;
     position: absolute;
     right: 10px;
     height: 50px;
     width: 50px;
-    background-color: hsla(200, 62%, 23%, 0.25);
+    background-color: hsl(0, 0%, 100%);
     text-align: center;
+
+    border-radius: 10px;
+    border: 3px solid black;
 }
 
 #creation_current_size {
@@ -236,6 +240,9 @@ fieldset {
     background-color: hsla(200, 62%, 23%, 0.25);
     text-align: center;
     cursor: pointer;
+
+    border-radius: 10px;
+    border: 3px solid black;
 }
 
 .List_Size_Span {

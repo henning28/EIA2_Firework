@@ -5,7 +5,6 @@ namespace CustomFirework {
         name: string;
     }
 
-
     export let colours: { [key: string]: Colour } = {
         "yellow": {
             fColour: "hsla(63, 100%, 50%, 1)",
@@ -32,6 +31,5 @@ namespace CustomFirework {
             hColour: "hsla(0, 100%, 100%, 0.5)",
             name: "white"
         }
-
     };
 }

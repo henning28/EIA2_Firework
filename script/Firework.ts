@@ -22,11 +22,9 @@ namespace CustomFirework {
             if (this.iLifetime <= this.lifespan * 10) {
                 this.iLifetime++;
             }
-
             else {
                 this.expandable = true;
             }
         }
-
     }
 }

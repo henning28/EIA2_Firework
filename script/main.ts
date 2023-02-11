@@ -24,7 +24,6 @@ namespace CustomFirework {
         data: Data;
     }
 
-
     currentFirework = {
         name: "",
         colour: colours[12],
@@ -46,7 +45,6 @@ namespace CustomFirework {
         resetButton.addEventListener("click", handleResetButton);
 
         canvas.addEventListener("click", handleCanvasClick);
-
 
         drawBackground();
         background = cc2.getImageData(0, 0, cc2.canvas.width, cc2.canvas.height);
@@ -79,7 +77,6 @@ namespace CustomFirework {
         }
         writeServerList();
     }
-
 
     function writeServerList(): void {
         let list: HTMLElement = <HTMLElement>document.querySelector("#uListServer");
@@ -144,7 +141,6 @@ namespace CustomFirework {
         }
         let id: string = target.id;
 
-
         if (id.includes("localFirework")) {
             if (id.includes("Delete")) {
                 let newId: number = cutID(id, 19);
@@ -171,7 +167,6 @@ namespace CustomFirework {
 
     }
 
-
     function deleteFirework(_name: string, _element: number): void {
         if (_name == "serverFirework") {
             console.log("delete Element");
@@ -183,8 +178,6 @@ namespace CustomFirework {
             wirteLocalList();
         }
     }
-
-
 
     function useFirework(_firework: FireworkComponents, _array: string, _position: number): void {
         let name: HTMLInputElement = <HTMLInputElement>document.querySelector("#name");
@@ -223,12 +216,10 @@ namespace CustomFirework {
         currentFirework.serverSaved = _firework.serverSaved;
     }
 
-
     function cutID(_id: string, _length: number): number {
         let newId: string = _id.slice(_length);
         return parseInt(newId);
     }
-
 
     function getInput(): void {
         let name: HTMLInputElement = <HTMLInputElement>document.querySelector("#name");
@@ -330,7 +321,6 @@ namespace CustomFirework {
         let id: string;
         let serverSaved: boolean;
 
-
         if (_element.includes("Defined") && _command != "delete") {
             let newElement: number = cutID(_element, 7);
             name = serverFirework[newElement].name;
@@ -370,7 +360,6 @@ namespace CustomFirework {
             serverSaved = serverFirework[newElement].serverSaved;
 
             let json: ServerFireworkComponents = ({ name, colour, pattern, size, lifespan, id, serverSaved });
-
 
             let query: URLSearchParams = new URLSearchParams();
             query.set("command", _command);
@@ -456,7 +445,6 @@ namespace CustomFirework {
         }
     }
 
-
     function wirteLocalList(): void {
         let list: HTMLElement = <HTMLElement>document.querySelector("#uListLocal");
         list.innerHTML = "";
@@ -504,12 +492,10 @@ namespace CustomFirework {
         serverlist.addEventListener("click", handleClick, true);
     }
 
-
     function handleResetButton(): void {
         localFirework = [];
         wirteLocalList();
     }
-
 
     function handleCanvasClick(_event: MouseEvent): void {
         if (currentFirework.pattern == Pattern.circle) {

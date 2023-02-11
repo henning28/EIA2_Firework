@@ -21,20 +21,20 @@
 <body>
 
     <header>
-        <h1>Create Your Firework!</h1>
+        <h1>Firework Creator</h1>
     </header>
 
     <main>
         <div class="grid_main">
             <div id="Firework_Creation">
                 <h2>Customize Here!</h2>
-                <fieldset>
+                <fieldset id="fieldset_1">
                     <legend>Preset Name</legend>
                     <input type="text" name="Name" id="name" placeholder="Enter Name here" required />
                 </fieldset>
 
-                <fieldset>
-                    <label for="colours">Choose a colour:</label>
+                <fieldset id="fieldset_2">
+                    <label for="colours">Choose Colour</label>
 
                     <select name="colours" id="colours">
                         <option value="red">Red</option>
@@ -47,7 +47,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Select a pattern:</legend>
+                    <legend>Select Pattern</legend>
                     <input type="radio" id="circle" name="pattern" value="circle" checked>
                     <label for="circle">Circle</label>
 
@@ -60,7 +60,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Select Particle Size:</legend>
+                    <legend>Select Particle Size</legend>
                     <span>10</span>
                     <input type="range" min="10" max="50" value="25" class="slider" id="size">
                     <span>50</span>
@@ -68,7 +68,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Select Firework Duration:</legend>
+                    <legend>Select Firework Duration</legend>
                     <span>5</span>
                     <input type="range" min="5" max="15" value="5" class="slider" id="lifespan">
                     <span>15</span>
@@ -79,7 +79,6 @@
                     <input type="hidden" value="" id="position">
                     <input type="hidden" value="" id="uniqueId">
                 </div>
-
 
                 <div>
                     <input class="Button" type="button" value="Create Local Preset" id="createButton">
