@@ -1,3 +1,10 @@
+/*
+Aufgabe: Firework_Endabgabe
+Name: Henning Reck
+Matrikel: 271133
+Datum: 12.02.2023
+Quellen: Natan Haider, Dennis Grützmacher, Daniel Meier
+ */
 var CustomFirework;
 (function (CustomFirework) {
     window.addEventListener("load", handleLoad);
